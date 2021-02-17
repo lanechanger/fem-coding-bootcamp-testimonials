@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: rem(32px);
+  font-size: 2 rem;
 }
 
 .attribution {
@@ -22,5 +22,6 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
+/*# sourceMappingURL=style.css.map */
