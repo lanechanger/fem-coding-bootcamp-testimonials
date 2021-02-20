@@ -65,7 +65,8 @@ ol {
 .l-text-block__quote {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0.5);
+  top: -2.6875rem;
 }
 
 .carousel-img-container {

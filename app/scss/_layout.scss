@@ -20,7 +20,8 @@
     &__quote {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%) scale(0.5);
+      top: rem(-43px);
     }
   }
 }
