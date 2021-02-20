@@ -17,7 +17,7 @@ body {
   padding: 1.5rem 1.5rem 0 1.5rem;
   background-image: url("/images/pattern-curve.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 80%;
   background-position: bottom left;
   height: 100vh;
   min-height: 100%;
