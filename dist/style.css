@@ -43,6 +43,18 @@ ol {
 
 .l-img-block {
   position: relative;
+  margin-bottom: 2.03125rem;
+}
+
+.l-text-block {
+  position: relative;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.l-text-block__quote {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .carousel-img-container {
@@ -73,5 +85,27 @@ ol {
   cursor: pointer;
   border: none;
   background-color: #fff;
+}
+
+.carousel-text-container {
+  color: #202046;
+  text-align: center;
+  line-height: calc(4/3);
+  font-size: 0.9375rem;
+}
+
+.carousel__testimonial {
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin-bottom: 1.1875rem;
+}
+
+.carousel__name {
+  font-weight: 700;
+}
+
+.carousel__role {
+  color: #babacf;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

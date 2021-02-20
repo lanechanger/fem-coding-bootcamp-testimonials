@@ -10,9 +10,17 @@
 
   &img-block {
     position: relative;
+    margin-bottom: rem(32.5px);
   }
 
   &text-block {
-    &__quote {}
+    position: relative;
+    margin: 0 rem(8px) 0 rem(8px);
+
+    &__quote {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

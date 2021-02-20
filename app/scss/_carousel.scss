@@ -29,11 +29,25 @@
     }
   }
 
-  &-text-container {}
+  &-text-container {
+    color: $darkBlue;
+    text-align: center;
+    line-height: calc(4/3);
+    font-size: rem(15px);
+  }
 
-  &__testimonial {}
+  &__testimonial {
+    font-weight: 300;
+    font-size: rem(18px);
+    margin-bottom: rem(19px);
+  }
 
-  &__name {}
+  &__name {
+    font-weight: 700;
+  }
 
-  &__role {}
+  &__role {
+    color: $grayishBlue;
+    font-weight: 500;
+  }
 }
