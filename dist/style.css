@@ -41,11 +41,37 @@ ol {
   }
 }
 
+.l-img-block {
+  position: relative;
+}
+
 .carousel-img-container {
   padding: 1.875rem 2.25rem 1.875rem 2.25rem;
 }
 
 .carousel-img {
   max-width: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1.75rem;
+  box-shadow: 0rem 0.9375rem 1.25rem -0.625rem rgba(36, 36, 113, 0.0991313);
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-controls > button {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
