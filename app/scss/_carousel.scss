@@ -1,0 +1,19 @@
+.carousel {
+  &-img-container {
+    padding: rem(30px) rem(36px) rem(30px) rem(36px);
+  }
+
+  &-img {
+    max-width: 100%;
+  }
+
+  &-controls {}
+
+  &-text-container {}
+
+  &__testimonial {}
+
+  &__name {}
+
+  &__role {}
+}
