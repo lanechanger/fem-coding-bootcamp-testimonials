@@ -22,5 +22,5 @@ $breakpoints-down: (small:639px,
 }
 
 @function rem($length) {
-  @return (stripUnits($length) / stripUnits($html-font-size)) * 1 rem;
+  @return (stripUnits($length) / stripUnits($html-font-size)) * 1rem;
 }
