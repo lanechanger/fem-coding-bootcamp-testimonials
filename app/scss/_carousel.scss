@@ -1,6 +1,9 @@
 .carousel {
   &-img-container {
-    padding: rem(30px) rem(36px) rem(30px) rem(36px);
+    padding: rem(30px) rem(36px) rem(14px) rem(36px);
+    background-image: url("/images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &-img {
@@ -9,7 +12,7 @@
 
   &-controls {
     position: absolute;
-    bottom: rem(15px);
+    bottom: rem(5px);
     left: 50%;
     transform: translateX(-50%);
     border-radius: rem(28px);
@@ -18,11 +21,8 @@
     overflow: hidden;
 
     &>button {
-      height: rem(40px);
-      width: rem(40px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      min-height: rem(40px);
+      min-width: rem(40px);
       cursor: pointer;
       border: none;
       background-color: #fff;

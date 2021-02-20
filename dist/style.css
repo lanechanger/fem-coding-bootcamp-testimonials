@@ -46,7 +46,10 @@ ol {
 }
 
 .carousel-img-container {
-  padding: 1.875rem 2.25rem 1.875rem 2.25rem;
+  padding: 1.875rem 2.25rem 0.875rem 2.25rem;
+  background-image: url("/images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .carousel-img {
@@ -55,7 +58,7 @@ ol {
 
 .carousel-controls {
   position: absolute;
-  bottom: 0.9375rem;
+  bottom: 0.3125rem;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1.75rem;
@@ -65,11 +68,8 @@ ol {
 }
 
 .carousel-controls > button {
-  height: 2.5rem;
-  width: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
   cursor: pointer;
   border: none;
   background-color: #fff;
