@@ -41,5 +41,9 @@
       transform: translateX(-50%) scale(0.5);
       top: rem(-43px);
     }
+
+    @include breakpoint-up(medium) {
+      margin: 0;
+    }
   }
 }

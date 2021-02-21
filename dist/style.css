@@ -101,6 +101,12 @@ ol {
   top: -2.6875rem;
 }
 
+@media screen and (min-width: 640px) {
+  .l-text-block {
+    margin: 0;
+  }
+}
+
 .carousel-img-container {
   padding: 1.875rem 2.25rem 0.875rem 2.25rem;
   background-image: url("/images/pattern-bg.svg");
@@ -133,8 +139,8 @@ ol {
 }
 
 .carousel-controls > button {
-  min-height: 2.5rem;
-  min-width: 2.5rem;
+  min-height: clamp(2.5rem, 2.5rem + ((100vw - 375px) * ((56 - 40) / (1440 - 375))), 3.5rem);
+  min-width: clamp(2.5rem, 2.5rem + ((100vw - 375px) * ((56 - 40) / (1440 - 375))), 3.5rem);
   cursor: pointer;
   border: none;
   background-color: #fff;

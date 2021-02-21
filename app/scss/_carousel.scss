@@ -28,8 +28,8 @@
     overflow: hidden;
 
     &>button {
-      min-height: rem(40px);
-      min-width: rem(40px);
+      min-height: unquote("clamp(2.5rem, 2.5rem + ((100vw - 375px) * ((56 - 40) / (1440 - 375))), 3.5rem)");
+      min-width: unquote("clamp(2.5rem, 2.5rem + ((100vw - 375px) * ((56 - 40) / (1440 - 375))), 3.5rem)");
       cursor: pointer;
       border: none;
       background-color: #fff;
