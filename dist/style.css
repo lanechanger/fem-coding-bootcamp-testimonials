@@ -13,24 +13,28 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   background-image: url("/images/pattern-curve.svg");
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: bottom left;
-  height: 100vh;
-  min-height: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 640px) {
   body {
     background-size: 42.36%;
-    padding: 3.125rem 4.5625rem 5.8125rem 4.5625rem;
   }
 }
 
 ol {
   list-style-type: none;
+}
+
+.site-container {
+  width: 87%;
+  max-width: 1294x;
+  margin: auto;
 }
 
 .attribution {
@@ -47,17 +51,20 @@ ol {
   color: #3e52a3;
 }
 
-.l-flex {
-  display: flex;
+.l-main {
   flex-direction: column;
-  height: 100%;
-  align-items: center;
 }
 
 @media screen and (min-width: 640px) {
-  .l-flex {
+  .l-main {
     flex-direction: row-reverse;
   }
+}
+
+.l-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .l-img-block {
@@ -68,7 +75,7 @@ ol {
 
 .l-text-block {
   position: relative;
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 0 0.5rem 3.375rem 0.5rem;
   flex: 1;
 }
 

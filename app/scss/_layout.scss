@@ -1,13 +1,16 @@
 .l- {
-  &flex {
-    display: flex;
+  &main {
     flex-direction: column;
-    height: 100%;
-    align-items: center;
 
     @include breakpoint-up(medium) {
       flex-direction: row-reverse;
     }
+  }
+
+  &flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &img-block {
@@ -18,7 +21,7 @@
 
   &text-block {
     position: relative;
-    margin: 0 rem(8px) 0 rem(8px);
+    margin: 0 rem(8px) rem(54px) rem(8px);
     flex: 1;
 
     &__quote {

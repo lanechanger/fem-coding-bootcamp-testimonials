@@ -13,22 +13,26 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  padding: rem(24px) rem(24px) rem(24px) rem(24px);
   background-image: url("/images/pattern-curve.svg");
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: bottom left;
-  height: 100vh;
-  min-height: 100%;
+  height: 100%;
+  min-height: 100vh;
 
   @include breakpoint-up(medium) {
     background-size: 42.36%;
-    padding: rem(50px) rem(73px) rem(93px) rem(73px);
   }
 }
 
 ol {
   list-style-type: none;
+}
+
+.site-container {
+  width: 87%;
+  max-width: 1294x;
+  margin: auto;
 }
 
 .attribution {
