@@ -51,12 +51,19 @@ ol {
   color: #3e52a3;
 }
 
-.l-main {
+.l-col-to-row {
+  display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 640px) {
-  .l-main {
+  .l-col-to-row {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .l-col-to-row__rev {
     flex-direction: row-reverse;
   }
 }

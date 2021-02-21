@@ -1,9 +1,16 @@
 .l- {
-  &main {
+  &col-to-row {
+    display: flex;
     flex-direction: column;
 
     @include breakpoint-up(medium) {
-      flex-direction: row-reverse;
+      flex-direction: row;
+    }
+
+    &__rev {
+      @include breakpoint-up(medium) {
+        flex-direction: row-reverse;
+      }
     }
   }
 
