@@ -13,10 +13,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-image: url("/images/pattern-curve.svg");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: bottom left;
+  background: url("/images/pattern-curve.svg") bottom left/80% no-repeat;
   height: 100%;
   min-height: 100vh;
 

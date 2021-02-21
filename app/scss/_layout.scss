@@ -35,15 +35,30 @@
     margin: 0 rem(8px) rem(54px) rem(8px);
     flex: 1;
 
-    &__quote {
+    @include breakpoint-up(medium) {
+      margin: 0;
+    }
+
+    &--abs-wrapper {
+      @include breakpoint-up(medium) {
+        position: absolute;
+        width: 113%;
+        top: 50%;
+        transform: translateY(-37%);
+        left: 12%;
+      }
+    }
+
+    &--quote {
       position: absolute;
       left: 50%;
       transform: translateX(-50%) scale(0.5);
       top: rem(-43px);
-    }
 
-    @include breakpoint-up(medium) {
-      margin: 0;
+      @include breakpoint-up(medium) {
+        transform: none;
+        left: 1%;
+      }
     }
   }
 }

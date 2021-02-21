@@ -13,10 +13,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-image: url("/images/pattern-curve.svg");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: bottom left;
+  background: url("/images/pattern-curve.svg") bottom left/80% no-repeat;
   height: 100%;
   min-height: 100vh;
 }
@@ -88,7 +85,23 @@ body {
   flex: 1;
 }
 
-.l-text-block__quote {
+@media screen and (min-width: 640px) {
+  .l-text-block {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .l-text-block--abs-wrapper {
+    position: absolute;
+    width: 113%;
+    top: 50%;
+    transform: translateY(-37%);
+    left: 12%;
+  }
+}
+
+.l-text-block--quote {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) scale(0.5);
@@ -96,8 +109,9 @@ body {
 }
 
 @media screen and (min-width: 640px) {
-  .l-text-block {
-    margin: 0;
+  .l-text-block--quote {
+    transform: none;
+    left: 1%;
   }
 }
 
@@ -158,6 +172,7 @@ body {
 @media screen and (min-width: 640px) {
   .carousel-text-container {
     line-height: 1.9;
+    text-align: left;
   }
 }
 
