@@ -16,21 +16,19 @@
 <body class="l-flex-center">
   <main class="l-col-to-row l-col-to-row__rev l-flex-center site-container">
     <section class="l-img-block">
-      <ol class="carousel-img-container">
-        <li><img class="carousel-img" src="./images/image-tanya.jpg" alt=""></li>
-        <!-- <li class="is-current-img">
-          <img src="./images/image-john.jpg" alt="">
-        </li> -->
-      </ol>
-      <div class="carousel-controls">
-        <button type="button" id="previous-slide">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
-            <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8" /></svg>
-        </button>
-        <button type="button" id="next-slide">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
-            <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8" /></svg>
-        </button>
+      <div class="carousel-img-container">
+        <img class="carousel-img" src="./images/image-tanya.jpg" alt="">
+        <!-- <img src="./images/image-john.jpg" alt=""> -->
+        <div class="carousel-controls">
+          <button type="button" id="previous-slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+              <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8" /></svg>
+          </button>
+          <button type="button" id="next-slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+              <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8" /></svg>
+          </button>
+        </div>
       </div>
     </section>
     <section class="l-text-block">
@@ -44,19 +42,17 @@
         <path fill="url(#a)" fill-rule="evenodd" d="M52.615 0L24.858 100H0V0h52.615zM120 0L92.243 100H67.385V0H120z"
           opacity=".15" />
       </svg>
-      <ol class="carousel-text-container">
-        <li class="is-current-text">
-          <p class="carousel__testimonial">
-            “ I’ve been interested in coding for a while but never taken the jump, until now.
-            I couldn’t recommend this course enough. I’m now in the job of my dreams and so
-            excited about the future. ”
-          </p>
-          <div class="l-col-to-row">
-            <p class="carousel__name">Tanya Sinclair</p>
-            <p class="carousel__role">UX Engineer</p>
-          </div>
-        </li>
-        <!-- <li>
+      <div class="carousel-text-container">
+        <p class="carousel__testimonial">
+          “ I’ve been interested in coding for a while but never taken the jump, until now.
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+          excited about the future. ”
+        </p>
+        <div class="l-col-to-row">
+          <p class="carousel__name">Tanya Sinclair</p>
+          <p class="carousel__role">UX Engineer</p>
+        </div>
+        <!-- 
           <p class="carousel__testimonial">
             “ If you want to lay the best foundation possible I’d recommend taking this course.
             The depth the instructors go into is incredible. I now feel so confident about
@@ -65,9 +61,8 @@
           <div class="l-col-to-row">
             <p class="carousel__name">John Tarkpor</p>
             <p class="carousel__role">Junior Front-end Developer</p>
-          </div>
-        </li> -->
-      </ol>
+          </div> -->
+      </div>
     </section>
   </main>
   <footer class="attribution">
