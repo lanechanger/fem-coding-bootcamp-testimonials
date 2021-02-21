@@ -2,6 +2,8 @@
   &flex {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    align-items: center;
 
     @include breakpoint-up(medium) {
       flex-direction: row-reverse;
@@ -11,11 +13,13 @@
   &img-block {
     position: relative;
     margin-bottom: rem(50.5px);
+    flex: 1;
   }
 
   &text-block {
     position: relative;
     margin: 0 rem(8px) 0 rem(8px);
+    flex: 1;
 
     &__quote {
       position: absolute;

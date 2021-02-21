@@ -14,13 +14,19 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   background-image: url("/images/pattern-curve.svg");
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: bottom left;
   height: 100vh;
   min-height: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    background-size: 42.36%;
+  }
 }
 
 ol {
@@ -44,6 +50,8 @@ ol {
 .l-flex {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  align-items: center;
 }
 
 @media screen and (min-width: 640px) {
@@ -55,11 +63,13 @@ ol {
 .l-img-block {
   position: relative;
   margin-bottom: 3.15625rem;
+  flex: 1;
 }
 
 .l-text-block {
   position: relative;
   margin: 0 0.5rem 0 0.5rem;
+  flex: 1;
 }
 
 .l-text-block__quote {
