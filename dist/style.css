@@ -33,7 +33,7 @@ ol {
 
 .site-container {
   width: 87%;
-  max-width: 1294x;
+  max-width: 1294px;
   margin: auto;
 }
 
@@ -123,13 +123,25 @@ ol {
   color: #202046;
   text-align: center;
   line-height: calc(4/3);
-  font-size: 0.9375rem;
+  font-size: clamp(0.9375rem, 0.9375rem + ((100vw - 375px) * ((20 - 15) / (1440 - 375))), 1.25rem);
+}
+
+@media screen and (min-width: 640px) {
+  .carousel-text-container {
+    line-height: 1.9;
+  }
 }
 
 .carousel__testimonial {
   font-weight: 300;
-  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.125rem + ((100vw - 375px) * ((32 - 18) / (1440 - 375))), 2rem);
   margin-bottom: 1.1875rem;
+}
+
+@media screen and (min-width: 640px) {
+  .carousel__testimonial {
+    line-height: 1.375;
+  }
 }
 
 .carousel__name {
