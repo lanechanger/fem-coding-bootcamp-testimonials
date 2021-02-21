@@ -21,6 +21,10 @@ body {
   background-position: bottom left;
   height: 100vh;
   min-height: 100%;
+
+  @include breakpoint-up(medium) {
+    background-size: 42.36%;
+  }
 }
 
 ol {
