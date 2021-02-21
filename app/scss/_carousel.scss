@@ -19,13 +19,19 @@
 
   &-controls {
     position: absolute;
-    bottom: rem(5px);
+    bottom: rem(-3px);
     left: 50%;
     transform: translateX(-50%);
     border-radius: rem(28px);
     box-shadow: rem(0px) rem(15px) rem(20px) rem(-10px) rgba(36, 36, 113, 0.0991313);
     display: flex;
     overflow: hidden;
+
+    @include breakpoint-up(medium) {
+      left: rem(135px);
+      transform: none;
+      bottom: rem(33px);
+    }
 
     &>button {
       min-height: unquote("clamp(2.5rem, 2.5rem + ((100vw - 375px) * ((56 - 40) / (1440 - 375))), 3.5rem)");

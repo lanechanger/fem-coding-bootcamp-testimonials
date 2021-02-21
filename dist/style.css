@@ -123,13 +123,21 @@ body {
 
 .carousel-controls {
   position: absolute;
-  bottom: 0.3125rem;
+  bottom: -0.1875rem;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1.75rem;
   box-shadow: 0rem 0.9375rem 1.25rem -0.625rem rgba(36, 36, 113, 0.0991313);
   display: flex;
   overflow: hidden;
+}
+
+@media screen and (min-width: 640px) {
+  .carousel-controls {
+    left: 8.4375rem;
+    transform: none;
+    bottom: 2.0625rem;
+  }
 }
 
 .carousel-controls > button {
