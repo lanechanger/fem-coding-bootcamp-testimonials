@@ -29,6 +29,8 @@ body {
 
 ol {
   list-style-type: none;
+  line-height: 0;
+  float: left;
 }
 
 .site-container {
@@ -77,7 +79,13 @@ ol {
 .l-img-block {
   position: relative;
   margin-bottom: 3.15625rem;
-  flex: 1;
+  flex: 1 0 min-content;
+}
+
+@media screen and (min-width: 640px) {
+  .l-img-block {
+    margin-bottom: 0;
+  }
 }
 
 .l-text-block {
@@ -98,6 +106,12 @@ ol {
   background-image: url("/images/pattern-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media screen and (min-width: 640px) {
+  .carousel-img-container {
+    padding: 3.9375rem 5.75rem 3.375rem 4.5625rem;
+  }
 }
 
 .carousel-img {

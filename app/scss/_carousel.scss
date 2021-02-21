@@ -4,6 +4,10 @@
     background-image: url("/images/pattern-bg.svg");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include breakpoint-up(medium) {
+      padding: rem(63px) rem(92px) rem(54px) rem(73px);
+    }
   }
 
   &-img {
