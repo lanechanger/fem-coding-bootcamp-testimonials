@@ -61,11 +61,16 @@
 
     @include breakpoint-up(medium) {
       line-height: 1.375;
+      margin-bottom: rem(32px);
     }
   }
 
   &__name {
     font-weight: 700;
+
+    @include breakpoint-up(medium) {
+      margin-right: rem(10px);
+    }
   }
 
   &__role {
