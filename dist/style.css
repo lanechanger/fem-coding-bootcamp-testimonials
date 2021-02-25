@@ -111,7 +111,8 @@ body {
 @media screen and (min-width: 640px) {
   .l-text-block--quote {
     transform: none;
-    left: 1%;
+    left: 15%;
+    top: -22%;
   }
 }
 
