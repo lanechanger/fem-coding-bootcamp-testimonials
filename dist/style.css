@@ -81,7 +81,7 @@ body {
 .l-text-block {
   position: relative;
   margin: 0 0.5rem 3.375rem 0.5rem;
-  flex: 1;
+  flex: 1 0 40%;
 }
 
 @media screen and (min-width: 640px) {

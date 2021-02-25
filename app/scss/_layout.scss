@@ -33,7 +33,7 @@
   &text-block {
     position: relative;
     margin: 0 rem(8px) rem(54px) rem(8px);
-    flex: 1;
+    flex: 1 0 40%;
 
     @include breakpoint-up(medium) {
       margin: 0;
