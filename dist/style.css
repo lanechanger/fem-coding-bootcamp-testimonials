@@ -25,8 +25,8 @@ body {
 }
 
 .site-container {
-  width: 87%;
-  max-width: 1294px;
+  width: 87vw;
+  width: clamp(23.4375rem, 87vw, 80.875rem);
   margin: auto;
 }
 
