@@ -201,4 +201,20 @@ body {
   color: #babacf;
   font-weight: 500;
 }
+
+#previous-slide,
+#next-slide {
+  transition: all 150ms ease-in-out;
+}
+
+#previous-slide:hover,
+#next-slide:hover {
+  background-color: #babacf;
+  transform: scale(1.15);
+}
+
+#previous-slide:active,
+#next-slide:active {
+  background-color: #202046;
+}
 /*# sourceMappingURL=style.css.map */

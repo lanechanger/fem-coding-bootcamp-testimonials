@@ -76,3 +76,17 @@
     font-weight: 500;
   }
 }
+
+#previous-slide,
+#next-slide {
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    background-color: $grayishBlue;
+    transform: scale(1.15);
+  }
+
+  &:active {
+    background-color: $darkBlue;
+  }
+}
