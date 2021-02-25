@@ -1,12 +1,10 @@
 .carousel {
   &-img-container {
     padding: rem(30px) rem(36px) rem(14px) rem(36px);
-    background-image: url("/images/pattern-bg.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("/images/pattern-bg.svg") center center/contain no-repeat;
 
     @include breakpoint-up(medium) {
-      padding: rem(63px) rem(92px) rem(54px) rem(73px);
+      padding: rem(63px) rem(92px) rem(54px) rem(66px);
     }
   }
 

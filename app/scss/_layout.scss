@@ -23,7 +23,7 @@
   &img-block {
     position: relative;
     margin-bottom: rem(50.5px);
-    flex: 1 0 min-content;
+    // flex: 1 0 min-content;
 
     @include breakpoint-up(medium) {
       margin-bottom: 0;

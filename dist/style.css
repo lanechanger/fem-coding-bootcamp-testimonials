@@ -70,7 +70,6 @@ body {
 .l-img-block {
   position: relative;
   margin-bottom: 3.15625rem;
-  flex: 1 0 min-content;
 }
 
 @media screen and (min-width: 640px) {
@@ -118,14 +117,12 @@ body {
 
 .carousel-img-container {
   padding: 1.875rem 2.25rem 0.875rem 2.25rem;
-  background-image: url("/images/pattern-bg.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url("/images/pattern-bg.svg") center center/contain no-repeat;
 }
 
 @media screen and (min-width: 640px) {
   .carousel-img-container {
-    padding: 3.9375rem 5.75rem 3.375rem 4.5625rem;
+    padding: 3.9375rem 5.75rem 3.375rem 4.125rem;
   }
 }
 
