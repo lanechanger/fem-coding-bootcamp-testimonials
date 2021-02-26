@@ -116,6 +116,8 @@ body {
 }
 
 .carousel-img-container {
+  overflow: hidden;
+  transform-style: preserve-3d;
   padding: 1.875rem 2.25rem 0.875rem 2.25rem;
   background: url("/images/pattern-bg.svg") center center/contain no-repeat;
 }
@@ -127,10 +129,32 @@ body {
 }
 
 .carousel-img {
+  z-index: 100;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  position: absolute;
   max-width: 100%;
   background: #EBEBEB;
   box-shadow: 0rem 2.5rem 3.125rem -1.875rem rgba(36, 36, 113, 0.495001);
   border-radius: 0.3125rem;
+}
+
+.carousel-img.initial, .carousel-img.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel-img.prev-img, .carousel-img.next-img {
+  z-index: 800;
+}
+
+.carousel-img.prev-img {
+  transform: translateX(-100%);
+}
+
+.carousel-img.next-img {
+  transform: translateX(100%);
 }
 
 .carousel-controls {
@@ -142,6 +166,7 @@ body {
   box-shadow: 0rem 0.9375rem 1.25rem -0.625rem rgba(36, 36, 113, 0.0991313);
   display: flex;
   overflow: hidden;
+  z-index: 1000;
 }
 
 @media screen and (min-width: 640px) {
