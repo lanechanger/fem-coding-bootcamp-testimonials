@@ -13,3 +13,10 @@ prev.addEventListener("click", function(){
   fullname.classList.add("red");
   role.classList.add("red");
 });
+
+next.addEventListener("click", function(){
+  console.log("next slide");
+  testimonial.classList.add("red");
+  fullname.classList.add("red");
+  role.classList.add("red");
+});
