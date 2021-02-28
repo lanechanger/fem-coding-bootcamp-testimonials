@@ -1,22 +1,33 @@
-// console.log("hello world");
-const prev = document.querySelector("#previous-slide");
-const next = document.querySelector("#next-slide");
+!(function (d) {
+  const itemClassName = ".carousel-img",
+    items = d.querySelectorAll(itemClassName),
+    totalItems = items.length,
+    slide = 0,
+    moving = true;
 
-const img = document.querySelector(".carousel-img");
-const testimonial = document.querySelector(".carousel__testimonial");
-const fullname = document.querySelector(".carousel__name");
-const role = document.querySelector(".carousel__role");
+  const prev = d.querySelector("#previous-slide"),
+    next = d.querySelector("#next-slide");
 
-prev.addEventListener("click", function(){
-  console.log("previous slide");
-  testimonial.classList.add("red");
-  fullname.classList.add("red");
-  role.classList.add("red");
-});
+  const img = d.querySelector(".carousel-img"),
+    testimonial = d.querySelector(".carousel__testimonial"),
+    fullname = d.querySelector(".carousel__name"),
+    role = d.querySelector(".carousel__role");
 
-next.addEventListener("click", function(){
-  console.log("next slide");
-  testimonial.classList.add("red");
-  fullname.classList.add("red");
-  role.classList.add("red");
-});
+  console.log(totalItems);
+
+
+  prev.addEventListener("click", function () {
+    console.log("previous slide");
+    testimonial.classList.add("red");
+    fullname.classList.add("red");
+    role.classList.add("red");
+  });
+
+  next.addEventListener("click", function () {
+    console.log("next slide");
+    testimonial.classList.add("red");
+    fullname.classList.add("red");
+    role.classList.add("red");
+  });
+
+}(document));
