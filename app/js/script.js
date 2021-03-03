@@ -57,7 +57,7 @@
     }
   }
 
-  // block out interactions for 500ms
+  // block out interactions for 500ms 
   function disableInteraction() {
     moving = true;
     setTimeout(function () {
