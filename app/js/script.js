@@ -1,5 +1,6 @@
 // see site below for the tutorial/code that this is mostly based from
 // https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
+// I modified it to be more scalable but I have decided to not use an animation for the time being
 !(function (d) {
   var itemClassNames = ["carousel-img", "carousel__testimonial", "carousel__person"],
     slides = itemClassNames.map(function (e) {

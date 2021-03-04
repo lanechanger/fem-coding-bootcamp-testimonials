@@ -20,7 +20,7 @@
   &-slide {
     z-index: 100;
     opacity: 0;
-    transition: all 500ms ease-in-out;
+    // transition: all 500ms ease-in-out;
     position: absolute;
 
 
@@ -31,18 +31,20 @@
       z-index: 900;
     }
 
-    &.prev,
-    &.next {
-      z-index: 800;
-    }
+    // Was originally trying to make an animation that didn't pan out at all
+    // Commenting out for now and will re-visit in the future
+    // &.prev,
+    // &.next {
+    //   z-index: 800;
+    // }
 
-    &.prev {
-      transform: translateX(-100%);
-    }
+    // &.prev {
+    //   transform: translateX(-100%);
+    // }
 
-    &.next {
-      transform: translateX(100%);
-    }
+    // &.next {
+    //   transform: translateX(100%);
+    // }
   }
 
   &-controls {
