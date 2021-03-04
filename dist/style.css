@@ -129,31 +129,34 @@ body {
 }
 
 .carousel-img {
-  z-index: 100;
-  opacity: 0;
-  transition: all 500ms ease-in-out;
-  position: absolute;
   max-width: 100%;
   background: #EBEBEB;
   box-shadow: 0rem 2.5rem 3.125rem -1.875rem rgba(36, 36, 113, 0.495001);
   border-radius: 0.3125rem;
 }
 
-.carousel-img.initial, .carousel-img.active {
+.carousel-slide {
+  z-index: 100;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  position: absolute;
+}
+
+.carousel-slide.initial, .carousel-slide.active {
   opacity: 1;
   position: relative;
   z-index: 900;
 }
 
-.carousel-img.prev-img, .carousel-img.next-img {
+.carousel-slide.prev, .carousel-slide.next {
   z-index: 800;
 }
 
-.carousel-img.prev-img {
+.carousel-slide.prev {
   transform: translateX(-100%);
 }
 
-.carousel-img.next-img {
+.carousel-slide.next {
   transform: translateX(100%);
 }
 
