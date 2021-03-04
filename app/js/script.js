@@ -1,8 +1,11 @@
 // see site below for the tutorial/code that this is mostly based from
 // https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
 !(function (d) {
-  var itemClassName = "carousel-img",
-    items = d.querySelectorAll(".".concat(itemClassName)),
+  var itemClassNames = ["carousel-img", "carousel__testimonial", "carousel__person"],
+    slides = itemClassNames.map(function (e) {
+      return d.querySelectorAll("." + e);
+    }),
+    items = slides[0],
     totalItems = items.length,
     last = totalItems - 1,
     slide = 0,
@@ -11,16 +14,14 @@
   const prev = d.querySelector("#previous-slide"),
     next = d.querySelector("#next-slide");
 
-  const img = d.querySelector(".".concat(itemClassName)),
-    testimonial = d.querySelector(".carousel__testimonial"),
-    fullname = d.querySelector(".carousel__name"),
-    role = d.querySelector(".carousel__role");
-
   // sets initial classes
   function setInitialClasses() {
-    items[last].classList.add("prev-img");
-    items[0].classList.add("active");
-    items[1].classList.add("next-img");
+    // for each of the nodeLists, set the corresponding classes
+    slides.forEach(function (e) {
+      e[last].classList.add("prev");
+      e[0].classList.add("active");
+      e[1].classList.add("next");
+    });
   }
 
   // Set event listeners
@@ -69,19 +70,18 @@
     if (!moving) {
       disableInteraction();
 
-      const newPrev = (slide === 0) ? last : slide - 1;
-      newNext = (slide === last) ? 0 : slide + 1;
+      // set new positions for the prev and next classes
+      const newPrev = (slide === 0) ? last : slide - 1,
+        newNext = (slide === last) ? 0 : slide + 1;
 
       if (totalItems >= 3) {
-        // clear old flags
-        items.forEach(function (element) {
-          element.className = itemClassName;
-        });
-
-        // set new flags
-        items[newPrev].className = itemClassName + " prev-img";
-        items[slide].className = itemClassName + " active";
-        items[newNext].className = itemClassName + " next-img";
+        // for each of carousel slide elements...
+        for (var x = 0; x < slides.length; x++) {
+          // set new flags
+          slides[x][newPrev].className = itemClassNames[x] + " carousel-slide prev";
+          slides[x][slide].className = itemClassNames[x] + " carousel-slide active";
+          slides[x][newNext].className = itemClassNames[x] + " carousel-slide next";
+        }
       }
     }
   }
