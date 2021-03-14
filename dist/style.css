@@ -44,13 +44,13 @@ body {
   color: #3e52a3;
 }
 
-.l-col-to-row, .carousel-slide.initial.l-col-to-row, .carousel-slide.active.l-col-to-row {
+.l-col-to-row, .carousel-slide.active.l-col-to-row {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 640px) {
-  .l-col-to-row, .carousel-slide.initial.l-col-to-row, .carousel-slide.active.l-col-to-row {
+  .l-col-to-row, .carousel-slide.active.l-col-to-row {
     flex-direction: row;
   }
 }
@@ -153,7 +153,7 @@ body {
   display: none;
 }
 
-.carousel-slide.initial, .carousel-slide.active {
+.carousel-slide.active {
   opacity: 1;
   position: relative;
   display: inherit;
