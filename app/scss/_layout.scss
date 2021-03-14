@@ -55,18 +55,23 @@
     -webkit-box-flex: 1;
     -ms-flex: 1 0 40%;
     flex: 1 0 40%;
+    width: auto;
+    height: auto;
 
     @include breakpoint-up(medium) {
       margin: 0;
-      height: rem(661px);
-      width: rem(698px);
+      // height: rem(661px);
+      // width: rem(698px);
     }
 
     &--abs-wrapper {
+      width: rem(311px);
+      height: rem(221px);
+
       @include breakpoint-up(medium) {
         position: absolute;
         width: 113%;
-        top: 50%;
+        height: rem(354px);
         -webkit-transform: translateY(-37%);
         transform: translateY(-37%);
         left: 12%;
@@ -84,7 +89,7 @@
         -webkit-transform: none;
         transform: none;
         left: 15%;
-        top: -22%;
+        top: -10%;
       }
     }
   }

@@ -23,11 +23,17 @@
     opacity: 0;
     position: absolute;
     object-fit: cover;
-
+    display: none;
 
     &.initial,
     &.active {
       opacity: 1;
+      position: relative;
+      display: inherit;
+
+      &.l-col-to-row {
+        @extend .l-col-to-row;
+      }
     }
   }
 
@@ -59,6 +65,7 @@
   }
 
   &-text-container {
+    position: relative;
     color: $darkBlue;
     font-size: unquote("clamp(0.9375rem, 0.9375rem + ((100vw - 375px) * ((20 - 15) / (1440 - 375))), 1.25rem)");
     line-height: calc(4/3);
