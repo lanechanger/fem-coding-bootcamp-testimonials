@@ -3,13 +3,15 @@
     background: url("/images/pattern-bg.svg") center center/contain no-repeat;
     overflow: hidden;
     padding: rem(30px) rem(36px) rem(14px) rem(36px);
-    width: rem(326.25px);
+    max-width: rem(326.25px);
+    width: 326.25px;
     height: rem(302.25px);
 
     @include breakpoint-up(medium) {
       padding: rem(63px) rem(92px) rem(54px) rem(66px);
       height: rem(661px);
-      width: rem(698px);
+      max-width: rem(698px);
+      width: 100%;
     }
   }
 

@@ -29,6 +29,13 @@ body {
   width: 87vw;
   width: clamp(20.39062rem, 87vw, 80.875rem);
   margin: auto;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+@media screen and (min-width: 640px) {
+  .site-container {
+    padding: 1.5rem;
+  }
 }
 
 .attribution {
@@ -71,8 +78,7 @@ body {
 .l-img-block {
   position: relative;
   margin-bottom: 3.15625rem;
-  width: auto;
-  height: auto;
+  flex: 1 1 60%;
 }
 
 @media screen and (min-width: 640px) {
@@ -84,9 +90,7 @@ body {
 .l-text-block {
   position: relative;
   margin: 0 0.5rem 3.375rem 0.5rem;
-  flex: 1 0 40%;
-  width: auto;
-  height: auto;
+  flex: 1 1 40%;
 }
 
 @media screen and (min-width: 640px) {
@@ -129,7 +133,8 @@ body {
   background: url("/images/pattern-bg.svg") center center/contain no-repeat;
   overflow: hidden;
   padding: 1.875rem 2.25rem 0.875rem 2.25rem;
-  width: 20.39062rem;
+  max-width: 20.39062rem;
+  width: 326.25px;
   height: 18.89062rem;
 }
 
@@ -137,7 +142,8 @@ body {
   .carousel-img-container {
     padding: 3.9375rem 5.75rem 3.375rem 4.125rem;
     height: 41.3125rem;
-    width: 43.625rem;
+    max-width: 43.625rem;
+    width: 100%;
   }
 }
 

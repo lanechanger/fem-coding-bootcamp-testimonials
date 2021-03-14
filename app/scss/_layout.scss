@@ -40,9 +40,7 @@
   &img-block {
     position: relative;
     margin-bottom: rem(50.5px);
-    width: auto;
-    height: auto;
-    // flex: 1 0 min-content;
+    flex: 1 1 60%;
 
     @include breakpoint-up(medium) {
       margin-bottom: 0;
@@ -53,10 +51,8 @@
     position: relative;
     margin: 0 rem(8px) rem(54px) rem(8px);
     -webkit-box-flex: 1;
-    -ms-flex: 1 0 40%;
-    flex: 1 0 40%;
-    width: auto;
-    height: auto;
+    -ms-flex: 1 1 40%;
+    flex: 1 1 40%;
 
     @include breakpoint-up(medium) {
       margin: 0;

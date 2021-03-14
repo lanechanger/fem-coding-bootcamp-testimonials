@@ -27,6 +27,11 @@ body {
   width: 87vw;
   width: clamp(rem(326.25px), 87vw, rem(1294px));
   margin: auto;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+
+  @include breakpoint-up(medium) {
+    padding: 1.5rem;
+  }
 }
 
 .attribution {
