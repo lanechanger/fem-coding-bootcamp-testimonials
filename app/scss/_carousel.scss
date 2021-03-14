@@ -84,6 +84,15 @@
     @include breakpoint-up(medium) {
       line-height: 1.375;
       margin-bottom: rem(32px);
+      top: rem(30px);
+      left: rem(17px);
+    }
+  }
+
+  &__person {
+    @include breakpoint-up(medium) {
+      top: rem(282px);
+      left: rem(17px);
     }
   }
 
