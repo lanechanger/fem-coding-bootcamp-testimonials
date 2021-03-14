@@ -1,26 +1,22 @@
 // based on Apple Pie Giraffe's carousel article
 // https://applepiegiraffe.hashnode.dev/how-to-create-a-super-simple-image-slider
 const images = document.querySelectorAll('.carousel-img');
-const testimonials = document.querySelectorAll('.carousel__testimonial');
-const persons = document.querySelectorAll('.carousel__person');
+const text = document.querySelectorAll('.carousel-text-item');
 const prevBtn = document.querySelector('#previous-slide');
 const nextBtn = document.querySelector('#next-slide');
 
 let index = 0;
 images[index].classList.add('active');
-testimonials[index].classList.add('active');
-persons[index].classList.add('active');
+text[index].classList.add('active');
 
 function removeActive() {
   images[index].classList.remove('active');
-  testimonials[index].classList.remove('active');
-  persons[index].classList.remove('active');
+  text[index].classList.remove('active');
 }
 
 function addActive() {
   images[index].classList.add('active');
-  testimonials[index].classList.add('active');
-  persons[index].classList.add('active');
+  text[index].classList.add('active');
 }
 
 function prevSlide() {

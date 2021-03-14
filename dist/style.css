@@ -145,6 +145,13 @@ body {
   border-radius: 0.3125rem;
   box-shadow: 0rem 2.5rem 3.125rem -1.875rem rgba(36, 36, 113, 0.495001);
   max-width: 100%;
+  max-width: 15.8125rem;
+}
+
+@media screen and (min-width: 640px) {
+  .carousel-img {
+    max-width: 33.75rem;
+  }
 }
 
 .carousel-slide {
@@ -204,6 +211,7 @@ body {
   font-size: clamp(1.125rem, 1.125rem + ((100vw - 375px) * ((32 - 18) / (1440 - 375))), 2rem);
   font-weight: 300;
   margin-bottom: 1.1875rem;
+  position: relative;
 }
 
 @media screen and (min-width: 640px) {
@@ -215,9 +223,13 @@ body {
   }
 }
 
+.carousel__person {
+  position: relative;
+}
+
 @media screen and (min-width: 640px) {
   .carousel__person {
-    top: 17.625rem;
+    top: 2rem;
     left: 1.0625rem;
   }
 }
