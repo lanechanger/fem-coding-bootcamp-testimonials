@@ -151,13 +151,13 @@ body {
   opacity: 0;
   position: absolute;
   object-fit: cover;
-  display: none;
+  transition: all 500ms ease-in-out;
+  transform: scale(1.1);
 }
 
 .carousel-slide.active {
+  transform: scale(1);
   opacity: 1;
-  position: relative;
-  display: inherit;
 }
 
 .carousel-controls {
