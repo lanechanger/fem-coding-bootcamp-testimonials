@@ -133,8 +133,8 @@ body {
   background: url("/images/pattern-bg.svg") center center/contain no-repeat;
   overflow: hidden;
   padding: 1.875rem 2.25rem 0.875rem 2.25rem;
-  width: 20.39062rem;
-  height: auto;
+  width: 326.25px;
+  height: 18.89062rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +143,7 @@ body {
 @media screen and (min-width: 640px) {
   .carousel-img-container {
     padding: 3.9375rem 5.75rem 3.375rem 4.125rem;
-    height: 41.3125rem;
+    height: auto;
     max-width: 43.625rem;
     width: 100%;
   }
