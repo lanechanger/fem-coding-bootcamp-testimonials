@@ -66,11 +66,11 @@
 
       @include breakpoint-up(medium) {
         position: absolute;
-        width: 113%;
+        width: 131%;
         height: rem(354px);
         -webkit-transform: translateY(-37%);
         transform: translateY(-37%);
-        left: 12%;
+        left: -5%;
       }
     }
 

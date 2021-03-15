@@ -107,10 +107,10 @@ body {
 @media screen and (min-width: 640px) {
   .l-text-block--abs-wrapper {
     position: absolute;
-    width: 113%;
+    width: 131%;
     height: 22.125rem;
     transform: translateY(-37%);
-    left: 12%;
+    left: -5%;
   }
 }
 
@@ -131,7 +131,6 @@ body {
 
 .carousel-img-container {
   background: url("/images/pattern-bg.svg") center center/contain no-repeat;
-  overflow: hidden;
   padding: 1.875rem 2.25rem 0.875rem 2.25rem;
   width: 326.25px;
   height: 18.89062rem;
