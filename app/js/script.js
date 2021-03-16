@@ -1,34 +1,59 @@
-// based on Apple Pie Giraffe's carousel article
-// https://applepiegiraffe.hashnode.dev/how-to-create-a-super-simple-image-slider
+// Based on this carousel article
+// https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
 const images = document.querySelectorAll('.carousel-img');
 const text = document.querySelectorAll('.carousel-text-item');
+const carouselItems = [images, text];
 const prevBtn = document.querySelector('#previous-slide');
 const nextBtn = document.querySelector('#next-slide');
+const last = images.length - 1;
 
-let index = 0;
-images[index].classList.add('active');
-text[index].classList.add('active');
+let index = 0,
+  prevIndex = prev(index),
+  nextIndex = next(index);
+addClasses();
 
-function removeActive() {
-  images[index].classList.remove('active');
-  text[index].classList.remove('active');
+function removeClasses() {
+  carouselItems.forEach(function (e) {
+    e[prevIndex].classList.remove('prev');
+    e[index].classList.remove('active');
+    e[nextIndex].classList.remove('next');
+  });
 }
 
-function addActive() {
-  images[index].classList.add('active');
-  text[index].classList.add('active');
+function addClasses() {
+  carouselItems.forEach(function (e) {
+    e[prevIndex].classList.add('prev');
+    e[index].classList.add('active');
+    e[nextIndex].classList.add('next');
+  });
+}
+
+function prev(x) {
+  return (x === 0) ? last : x - 1;
+}
+
+function next(x) {
+  return (x === last) ? 0 : x + 1;
+}
+
+function setPrevIndex() {
+  index = prev(index), prevIndex = prev(prevIndex), nextIndex = prev(prevIndex);
+}
+
+function setNextIndex() {
+  index = next(index), prevIndex = next(prevIndex), nextIndex = next(nextIndex);
 }
 
 function prevSlide() {
-  removeActive();
-  index = index === 0 ? images.length - 1 : index - 1;
-  addActive();
+  removeClasses();
+  setPrevIndex();
+  addClasses();
 }
 
 function nextSlide() {
-  removeActive();
-  index = index === images.length - 1 ? 0 : index + 1;
-  addActive();
+  removeClasses();
+  setNextIndex();
+  addClasses();
 }
 
 prevBtn.addEventListener('click', prevSlide);

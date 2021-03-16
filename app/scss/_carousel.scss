@@ -45,6 +45,14 @@
         @extend .l-col-to-row;
       }
     }
+
+    &.next {
+      transform: translateX(100%);
+    }
+
+    &.prev {
+      transform: translateX(-100%);
+    }
   }
 
   &-controls {
