@@ -266,15 +266,19 @@ body {
   font-weight: 500;
 }
 
-#previous-slide,
-#next-slide {
+#previous-slide svg,
+#next-slide svg {
   transition: all 150ms ease-in-out;
 }
 
 #previous-slide:hover,
 #next-slide:hover {
   background-color: #babacf;
-  transform: scale(1.15);
+}
+
+#previous-slide:hover svg,
+#next-slide:hover svg {
+  transform: scale(1.5);
 }
 
 #previous-slide:active,

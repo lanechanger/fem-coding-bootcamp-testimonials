@@ -130,20 +130,25 @@
   }
 }
 
-#previous-slide,
-#next-slide {
+#previous-slide svg,
+#next-slide svg {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+}
 
-  &:hover {
-    background-color: $grayishBlue;
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
-  }
+#previous-slide:hover,
+#next-slide:hover {
+  background-color: $grayishBlue;
 
-  &:active {
-    background-color: $darkBlue;
+  & svg {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
   }
+}
+
+#previous-slide:active,
+#next-slide:active {
+  background-color: $darkBlue;
 }
 
 #previous-slide {
