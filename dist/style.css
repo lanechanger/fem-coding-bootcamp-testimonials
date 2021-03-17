@@ -30,6 +30,7 @@ body {
   width: clamp(20.39062rem, 87vw, 80.875rem);
   margin: auto;
   padding: 1.5rem 1.5rem 0 1.5rem;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 640px) {
@@ -174,6 +175,14 @@ body {
   position: relative;
 }
 
+.carousel-slide.next {
+  transform: translateX(100%);
+}
+
+.carousel-slide.prev {
+  transform: translateX(-100%);
+}
+
 .carousel-controls {
   bottom: -0.1875rem;
   box-shadow: 0rem 0.9375rem 1.25rem -0.625rem rgba(36, 36, 113, 0.0991313);
@@ -181,6 +190,7 @@ body {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 @media screen and (min-width: 640px) {
