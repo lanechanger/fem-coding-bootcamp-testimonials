@@ -195,8 +195,8 @@ body {
 
 @media screen and (min-width: 640px) {
   .carousel-controls {
-    bottom: 2.0625rem;
-    left: 8.4375rem;
+    bottom: 4%;
+    left: calc(8.5% + 4rem);
     transform: none;
   }
 }

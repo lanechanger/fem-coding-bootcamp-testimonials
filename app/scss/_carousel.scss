@@ -75,8 +75,8 @@
     z-index: 2;
 
     @include breakpoint-up(medium) {
-      bottom: rem(33px);
-      left: rem(135px);
+      bottom: 4%;
+      left: calc(8.5% + 4rem);
       -webkit-transform: none;
       transform: none;
     }
